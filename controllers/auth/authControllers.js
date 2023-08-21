@@ -39,7 +39,7 @@ export const authLogin = asyncHandler(async (req, res) => {
   );
   res.cookie("token", token, {
     httpOnly: true,
-    secure: process.env.APP_ENV == "Development" ? false : true,
+    // secure: process.env.APP_ENV == "Development" ? false : true,
     sameSite: "strict",
     maxAge: 7 * 24 * 60 * 60 * 1000,
   });

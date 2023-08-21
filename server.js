@@ -15,12 +15,12 @@ const app = express();
 
 // Init Environment Variable
 dotenv.config();
-const PORT = process.env.PORT || 9000;
+const PORT = 5050;
 
 // Cors Setup
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "https://ephemeral-salmiakki-ad316d.netlify.app/",
     credentials: true,
   })
 );
