@@ -20,7 +20,7 @@ const PORT = process.env.PORT || 9000;
 // Cors Setup
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "https://aspire-dashboard-delta.vercel.app",
     credentials: true,
   })
 );
